@@ -95,12 +95,11 @@ def main_loop():
         if gs.checkmate:
             gameOver = True
             if gs.whiteMove:
-                # finisher(screen, "piki lost haha :P")
-                finisher(screen, "ez noob")
-                label.mainloop()
+                finisher(screen, "U lost")
+                # label.mainloop()
             else:
-                finisher(screen, "piki u won :)")
-                label.mainloop()
+                finisher(screen, "U won")
+                # label.mainloop()
                 
         elif gs.stalemate:
             gameOver = True

@@ -219,7 +219,6 @@ class GameState():
             self.get_queen_side_cm(r,c,moves)  
 
     def get_king_side_cm(self,r,c,moves):
-        # print("maika ti")
         if self.board[r][c+1] == '--' and self.board[r][c+2] == '--':
             if not self.sq_attacked(r, c+1) and not self.sq_attacked(r, c+2):
                 moves.append(Move((r,c), (r, c+2), self.board, isCastleMove = True))
@@ -417,7 +416,6 @@ class Move():
 #             king_col = self.black_king_loc[1]
 
 #         if self.inCheck:
-#             print("pedal")
 #             if len(self.checks) == 1:
 #                 moves = self.get_all_possible_moves()
                 
