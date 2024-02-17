@@ -4,6 +4,7 @@ pieceScore = {'K': 0, 'Q': 9, 'R': 5, 'B': 3, 'N':3, 'p':1 }
 CHECKMATE = 1000
 STALEMATE = 0
 DEPTH = 2
+
 def find_randomMove(valid_moves):
     return valid_moves[random.randint(0 ,len(valid_moves)-1)]
 
@@ -166,8 +167,6 @@ def find_bestMove_abp(gs, valid_moves):
     return nextMove
 
 def score_board(gs):
-
-
 
     if gs.checkmate:
         if gs.whiteMove:
